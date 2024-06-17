@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+
+.top {
+    width: 100%;
+    height: 60vh;
+    background-image: url("pexels-felixmittermeier-2832026.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+.top.overlay {
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+
+    background-color: rgba(0, 0, 0, 0.263);
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 5px;
+    width: 100%;
+    /* padding: 0 10vh;*/
+    padding: 0 10;
+    color: white;
+
+}
+
+.text h1 {
+    font-weight: 600;
+    font-size: 4vw;
+}
+
+.image {
+    background-image: url("octanet-task1-bg.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    width: 220px;
+}
+
+.rtext {
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rtext p {
+    font-size: 12px;
+}
+
+.bottom {
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+
+}
+
+.b1 {
+    width: 30%;
+    min-height: inherit;
+    background-image: url("pexels-peng-liu-45946-169647.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.b1 h1 {
+    text-align: center;
+    padding: 30px;
+    color: chocolate;
+}
+
+.b1 p {
+    color: azure;
+    text-align: center;
+    padding: 15px;
+}
+
+.b2 {
+    width: 30%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.up {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url("pexels-rickyrecap-1563256.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.up h1{
+    text-align: center;
+    padding: 30px;
+}
+.up p{
+    color:azure ;
+    text-align: center;
+    padding: 15px;
+}
+.down{
+width: 100%;
+min-height: 20vh;
+
+background-image: url("octanet-task1-bg.jpeg");
+background-size: cover;
+background-position: center;
+}
+
+.b3 {
+    width: 40%;
+    min-height: inherit;
+    background-image: url("pexels-gabby-k-5841845.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    text-decoration: double;
+
+}
+.b3 p{
+    color: red;
+    padding: 1.5px;
+}
+.content{
+padding: 70px;
+background-color: rgba(29, 35, 35, 0.463);
+
+}
+@media (max-width:500px) {
+    .text{
+        flex-direction: column;
+        align-items:flex-start;
+
+    }
+    .text h1{
+        font-size: 5vh;
+    }
+    .text.image{
+        height: 200px;
+        width: 140px;
+    }
+    .rtext p{
+margin-top: 10px;
+    }
+    .icons{
+        margin-top: 1opx;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1{
+        width: 100%;
+    }
+    .b2{
+        width: 100%;
+    }
+    .b3{
+        width: 100%;
+    }
+}
