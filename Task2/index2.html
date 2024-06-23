@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="stylesheet2.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="todolist-looogooo.png">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">Todo List</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>To-Do List</h1>
+        <ul class="todo-list">
+            <li><input type="checkbox"> Task 1</li>
+            <li><input type="checkbox"> Task 2</li>
+            <li><input type="checkbox"> Task 3</li>
+        </ul>
+        <input type="text" placeholder="Add new task..." id="new-task">
+        <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <script>
+        function addTask() {
+            const taskInput = document.getElementById('new-task');
+            const newTask = taskInput.value;
+            if (newTask) {
+                const taskList = document.querySelector('.todo-list');
+                const newTaskItem = document.createElement('li');
+                newTaskItem.innerHTML = `<input type="checkbox"> ${newTask}`;
+                taskList.appendChild(newTaskItem);
+                taskInput.value = '';
+            }
+        }
+    </script>
+</body>
+</html>
